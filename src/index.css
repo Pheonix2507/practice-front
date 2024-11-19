@@ -1,0 +1,327 @@
+/* General Styles */
+body {
+  background-image: url('./top-view-desk-concept-with-copy-space_23-2148236856.avif');
+  background-size: cover; /* Make sure the image covers the entire screen */
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  height: 100vh; /* Ensure it covers the whole viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Optional: hides any overflow */
+}
+
+/* Create a blur effect for the background */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px); /* Adjust the blur level */
+  z-index: -1; /* Keep the blur effect behind content */
+}
+
+/* Optional: Adjust the main content to stand out */
+.app {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the background */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight white overlay for better text visibility */
+  border-radius: 8px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Modern, professional font */
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #2a6fb0;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form-group {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  background-color: #f8fafc;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2a6fb0;
+  outline: none;
+  background-color: #ffffff;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.nav-button {
+  background-color: #2a6fb0;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.start-button{
+    background-color: #2a6fb0;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #205a8e;
+  transform: scale(1.02);
+}
+
+.nav-button:active {
+  background-color: #17476c;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you h2 {
+  color: #2a6fb0;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.thank-you button {
+  background-color: #2a6fb0;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thank-you button:hover {
+  background-color: #205a8e;
+  transform: scale(1.02);
+}
+
+.thank-you button:active {
+  background-color: #17476c;
+}
+
+.add-question {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.add-question h2 {
+  font-size: 20px;
+  color: #2a6fb0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.add-question .form-group {
+  margin-bottom: 15px;
+}
+
+.add-question label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.add-question textarea,
+.add-question select,
+.add-question input {
+  max-width: 100%; /* Prevent overflowing even with extra-large placeholder text */
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  background-color: #f8fafc;
+  word-wrap: break-word; /* Prevent long placeholder text from overflowing */
+}
+
+.add-question textarea:focus,
+.add-question select:focus,
+.add-question input:focus {
+  border-color: #2a6fb0;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.add-question textarea {
+  resize: horizontal;
+  height: 80px;
+  width: 520px; 
+}
+
+.add-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 10px auto 0;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.add-button:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+
+.add-button:active {
+  background-color: #1e7e34;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .add-question {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .add-question h2 {
+    font-size: 18px;
+  }
+
+  .add-question textarea,
+  .add-question select,
+  .add-question input {
+    width: 120px;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .add-button {
+    padding: 8px 12px;
+    font-size: 13px;
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .add-question {
+    padding: 10px;
+  }
+
+  .add-question h2 {
+    font-size: 16px;
+  }
+
+  .add-question textarea,
+  .add-question select,
+  .add-question input {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .add-button {
+    padding: 6px 10px;
+    font-size: 12px;
+    width: 100%;
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+
+  .nav-button {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
