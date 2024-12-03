@@ -118,7 +118,7 @@ const nextStep = async () => {
 
     // Send responses to backend
     try {
-      const response = await axios.post("http://localhost:5000/api/survey", {
+      const response = await axios.post("http://localhost:5000/api/survey"||process.env.PORT, {
         responses,
       });
       console.log("Survey submitted:", response.data);
